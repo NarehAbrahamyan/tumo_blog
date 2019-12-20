@@ -1,1 +1,25 @@
+  <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 
+<% if user_signed_in? %>
+
+
+
+
+
+<% else %>
+  <div class = "col-md-12 search_div" > 
+  <form class="form-inline my-2 my-lg-0 justify-content-center">
+      <input class="form-control mr-sm-2 col-md-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+
+
+
+<% end %>
