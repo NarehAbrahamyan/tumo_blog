@@ -2510,3 +2510,599 @@ Processing by Devise::PasswordsController#new as HTML
 Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 9008)
 
 
+Started GET "/" for ::1 at 2019-12-20 19:04:52 +0400
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.2ms | Allocations: 630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2103ms (Views: 2061.4ms | ActiveRecord: 0.0ms | Allocations: 93714)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:04:56 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 613)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 186.1ms | Allocations: 9085)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 209ms (Views: 198.2ms | ActiveRecord: 0.7ms | Allocations: 23644)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:05:29 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1079)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1029ms (Views: 1028.0ms | ActiveRecord: 0.0ms | Allocations: 64528)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:05:30 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1638)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 9248)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:05:43 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:05:43 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1047ms (Views: 1046.2ms | ActiveRecord: 0.0ms | Allocations: 74770)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 653ms (Views: 651.9ms | ActiveRecord: 0.0ms | Allocations: 50557)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:06:01 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:06:02 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1108ms (Views: 1107.1ms | ActiveRecord: 0.0ms | Allocations: 78227)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 732ms (Views: 730.8ms | ActiveRecord: 0.0ms | Allocations: 53118)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application.css-439706775883d9e7065a1c1e75f3cb05f2f7e2c8095c6fa4f21205b933ff36a7.map"):
+  
+actionpack (6.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (6.0.2) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.2) lib/active_support/logger.rb:64:in `block (3 levels) in broadcast'
+activesupport (6.0.2) lib/active_support/logger_silence.rb:36:in `silence'
+activesupport (6.0.2) lib/active_support/logger.rb:62:in `block (2 levels) in broadcast'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:06:43 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1099)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1017ms (Views: 1015.4ms | ActiveRecord: 0.0ms | Allocations: 65130)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:06:53 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1041ms (Views: 1040.2ms | ActiveRecord: 0.0ms | Allocations: 65852)
+
+
+Started GET "/" for ::1 at 2019-12-20 19:07:32 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 0.0ms | Allocations: 15932)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...rder: solid 1px": expected expression (e.g. 1px, bold), was "#"
+        on line 28:23 of app/assets/stylesheets/application.scss
+>>     border: solid 1px #
+
+   ----------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8: 
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:28
+app/views/layouts/application.html.erb:9
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:09:39 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1022ms (Views: 1021.3ms | ActiveRecord: 0.0ms | Allocations: 64617)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:15 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:15 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:15 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1193ms (Views: 1191.9ms | ActiveRecord: 0.0ms | Allocations: 109664)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1044ms (Views: 1043.3ms | ActiveRecord: 0.0ms | Allocations: 89159)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 852ms (Views: 850.6ms | ActiveRecord: 0.0ms | Allocations: 65423)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1329ms (Views: 1328.4ms | ActiveRecord: 0.0ms | Allocations: 85889)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 900ms (Views: 898.6ms | ActiveRecord: 0.0ms | Allocations: 56264)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1104ms (Views: 1102.4ms | ActiveRecord: 0.0ms | Allocations: 70007)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:58 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:58 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:10:58 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1096ms (Views: 1095.1ms | ActiveRecord: 0.0ms | Allocations: 87852)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 874ms (Views: 872.7ms | ActiveRecord: 0.0ms | Allocations: 59310)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 851ms (Views: 849.9ms | ActiveRecord: 0.0ms | Allocations: 60491)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:11:26 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1040ms (Views: 1039.5ms | ActiveRecord: 0.0ms | Allocations: 65403)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:11:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:11:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:11:38 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 999ms (Views: 998.0ms | ActiveRecord: 0.0ms | Allocations: 65323)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1010ms (Views: 1008.6ms | ActiveRecord: 0.0ms | Allocations: 82340)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1422ms (Views: 1421.2ms | ActiveRecord: 0.0ms | Allocations: 129218)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:11:47 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1038ms (Views: 1037.6ms | ActiveRecord: 0.0ms | Allocations: 64923)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:12:21 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1075)
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:12:21 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1094)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1163ms (Views: 1161.4ms | ActiveRecord: 0.0ms | Allocations: 90132)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1126ms (Views: 1125.2ms | ActiveRecord: 0.0ms | Allocations: 77585)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:13:46 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1030ms (Views: 1028.8ms | ActiveRecord: 0.0ms | Allocations: 63674)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:13:48 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.0ms | Allocations: 8575)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:14:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1015ms (Views: 1013.8ms | ActiveRecord: 0.0ms | Allocations: 64655)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:14:23 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1044ms (Views: 1042.5ms | ActiveRecord: 0.0ms | Allocations: 65873)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:14:44 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1059ms (Views: 1057.9ms | ActiveRecord: 0.0ms | Allocations: 64979)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:02 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1043ms (Views: 1042.1ms | ActiveRecord: 0.0ms | Allocations: 66309)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:04 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 8586)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:04 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 8592)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:04 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 8590)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 8582)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 8580)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 8590)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 8582)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:05 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 8586)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 8586)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 8582)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:06 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 8588)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:28 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1040ms (Views: 1039.6ms | ActiveRecord: 0.0ms | Allocations: 66311)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:15:50 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1024ms (Views: 1023.3ms | ActiveRecord: 0.0ms | Allocations: 65007)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:20:02 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1045ms (Views: 1044.1ms | ActiveRecord: 0.0ms | Allocations: 66838)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:20:53 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4105ms (Views: 4103.4ms | ActiveRecord: 0.0ms | Allocations: 65938)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:22:02 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1038ms (Views: 1036.8ms | ActiveRecord: 0.0ms | Allocations: 64187)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:22:13 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 9049)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:22:39 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1046ms (Views: 1045.5ms | ActiveRecord: 0.0ms | Allocations: 65505)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:22:48 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1043ms (Views: 1041.7ms | ActiveRecord: 0.0ms | Allocations: 65055)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:23:08 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1029ms (Views: 1027.7ms | ActiveRecord: 0.0ms | Allocations: 65917)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:23:22 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1062ms (Views: 1061.1ms | ActiveRecord: 0.0ms | Allocations: 65901)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:23:39 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1055ms (Views: 1053.6ms | ActiveRecord: 0.0ms | Allocations: 64658)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:23:45 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1026ms (Views: 1025.3ms | ActiveRecord: 0.0ms | Allocations: 67188)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:23:59 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1049ms (Views: 1047.8ms | ActiveRecord: 0.0ms | Allocations: 65009)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:24:00 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 8584)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-20 19:24:25 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1075)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1040ms (Views: 1039.0ms | ActiveRecord: 0.0ms | Allocations: 66407)
+
+

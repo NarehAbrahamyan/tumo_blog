@@ -15,10 +15,47 @@
  */
 @import "bootstrap";
 
+body{
+    background: #1a1a1a;
+}
+
+h2{
+    color: #ff9933;
+}
+
+.form{
+    top: 50%;
+    transform: translate(0%, 80%);
+}
+
 .center{
     text-align: center;
 }
 
-.form input{
-    max-width: 20%;
+.field{
+    width: 20%;
+    margin: auto;
+}
+.field input{
+    width: 100%;
+    border: solid 2px #ffcc00;
+    outline: none;
+    background: none;
+    color: #ffcc00;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.field input:focus{
+    width: 100%;
+    border: solid 2px #ff9933;
+    color: #ff9933;
+}
+.field input[type='checkbox']{
+    width: auto;
+}
+.field label{
+    color: #ffcc00;
+}
+.field a{
+    color: #ffcc00;
 }
