@@ -151,6 +151,16 @@ a:hover{
     right: 1%;
     animation-duration: 1.4s;
 }
+<<<<<<< HEAD
+.field a{
+    color: #ffcc00;
+}
+.actions{
+    margin-top: 10px;
+}
+.actions input{
+    color: #ff9933;
+=======
 @keyframes rotate {
     0%{
         transform: rotate(0deg);
@@ -158,4 +168,5 @@ a:hover{
     100%{
         transform: rotate(90deg);
     }
+>>>>>>> 9c4904e2ddacba5cbc393b984623c2132b2f559b
 }
