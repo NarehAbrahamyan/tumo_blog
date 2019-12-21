@@ -6551,3 +6551,25 @@ ActionView::Template::Error (Error: Invalid CSS after "}": expected 1 selector o
   
 app/assets/stylesheets/application.scss:153
 app/views/layouts/application.html.erb:9
+Started GET "/users/sign_in" for ::1 at 2019-12-21 12:36:52 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 651)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4683)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1904ms (Views: 1889.1ms | ActiveRecord: 0.5ms | Allocations: 106074)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-21 13:18:35 +0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 523)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1619)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.7ms | Allocations: 390)
+Completed 200 OK in 57ms (Views: 55.4ms | ActiveRecord: 0.0ms | Allocations: 11050)
+
+
