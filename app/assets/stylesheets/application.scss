@@ -102,6 +102,7 @@ a:hover{
     border-radius: 30px;
     padding: 80px;
     animation: rotate 2s infinite linear;
+    z-index: -1;
 }
 
 .animation li:nth-child(1){
