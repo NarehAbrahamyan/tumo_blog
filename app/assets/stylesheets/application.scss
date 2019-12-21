@@ -16,7 +16,9 @@
 @import "bootstrap";
 
 body{
-    background: #1a1a1a;
+    background-image: url(/assets/back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2{

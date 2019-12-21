@@ -3106,3 +3106,61 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 1040ms (Views: 1039.0ms | ActiveRecord: 0.0ms | Allocations: 66407)
 
 
+Started GET "/" for ::1 at 2019-12-21 11:04:39 +0400
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.3ms | Allocations: 630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2377ms (Views: 2351.9ms | ActiveRecord: 0.0ms | Allocations: 115815)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:05:20 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1041ms (Views: 1040.0ms | ActiveRecord: 0.0ms | Allocations: 65005)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:05:24 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 7349)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:05:34 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1046ms (Views: 1045.6ms | ActiveRecord: 0.0ms | Allocations: 65341)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:05:52 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 102)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1037ms (Views: 1036.6ms | ActiveRecord: 0.0ms | Allocations: 65046)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:05:53 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7357)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:06:50 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1085ms (Views: 1084.5ms | ActiveRecord: 0.0ms | Allocations: 63766)
+
+
