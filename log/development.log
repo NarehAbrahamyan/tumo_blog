@@ -6499,3 +6499,55 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 1068ms (Views: 1066.9ms | ActiveRecord: 0.0ms | Allocations: 67183)
 
 
+Started GET "/users/sign_in" for ::1 at 2019-12-21 12:35:43 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.3ms | Allocations: 623)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.2ms | Allocations: 4958)
+Completed 500 Internal Server Error in 243ms (ActiveRecord: 0.5ms | Allocations: 41876)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "}": expected 1 selector or at-rule, was "<<<<<<< HEAD"
+        on line 153:2 of app/assets/stylesheets/application.scss
+>> }
+
+   -^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:153
+app/views/layouts/application.html.erb:9
+Started GET "/users/sign_in" for ::1 at 2019-12-21 12:35:47 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 826)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 16916)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "}": expected 1 selector or at-rule, was "<<<<<<< HEAD"
+        on line 153:2 of app/assets/stylesheets/application.scss
+>> }
+
+   -^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:153
+app/views/layouts/application.html.erb:9
