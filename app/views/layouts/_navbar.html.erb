@@ -4,12 +4,12 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="<%= root_path %>">home <span class="sr-only">(current)</span></a>
+  <div class="collapse navbar-collapse " id="navbarSupportedContent">
+    <ul class="navbar-nav navb">
+      <li class="nav-item active" >
+        <a class="nav-link "  href="<%= root_path %>">home <span class="sr-only">(current)</span></a>
       </li>
-      <p class="navbar-text float-right">
+      <li class="navbar-text float-right">
       <% if user_signed_in? %>
         
         <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
@@ -18,7 +18,7 @@
         <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
         <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
       <% end %>
-      </p>
+      </li>
           </ul>
         </div>
       </nav>
