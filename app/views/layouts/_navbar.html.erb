@@ -5,7 +5,12 @@
   </button>
 
   <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav navb">
+  <% if user_signed_in? %>
+  <span class="navbar-text align-self-center" style="padding:0;height:10px;"  >
+    <%=  current_user.username  %>
+    </span>
+  <% end %>  
+  <ul class="navbar-nav navb">
       <li class="nav-item active" >
         <a class="nav-link "  href="<%= root_path %>">home <span class="sr-only">(current)</span></a>
       </li>

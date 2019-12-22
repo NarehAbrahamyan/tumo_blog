@@ -23,8 +23,11 @@ body{
     height:100%;
     background-image: url(/assets/back.png);
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     // position: relative;
     // background-size: 100% 100%;
 }
