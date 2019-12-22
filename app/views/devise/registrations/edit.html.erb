@@ -1,3 +1,4 @@
+
 <div class="back_set">
   <div><h2>Edit <%= resource_name.to_s.humanize %></h2></div> <div class="back"><h2><%= link_to "Back", :back %></h2></div>
 </div>
@@ -21,17 +22,17 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password", placeholder: " New Password" %>
     <% if @minimum_password_length %>
       <br />
-      <div  class="text-center h6 text-muted"><%= @minimum_password_length %> characters minimum</div>
+      <div  class="text-center h6 text-light"><%= @minimum_password_length %> characters minimum</div>
     <% end %>
   </div>
   <div class="field">
-    <%= f.password_field :current_password, autocomplete: "confirm-new-password", placeholder: "Confirm New Password" %>
+    <%= f.password_field :current_password, autocomplete: "new-password", placeholder: "Confirm New Password" %>
   </div>
   <br/>  
-    <p class="text-center h6 text-muted">we need your current password to confirm your changes</p>
+    <p class="text-center h6 text-light">we need your current password to confirm your changes</p>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "old-password", placeholder: "Old Password"%>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "old Password"%>
   </div>
 
   <div class="actions text-center">

@@ -21,7 +21,7 @@
   <div class="field">
 
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <em class="text-muted">(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "new-password" ,placeholder: "New Password"%>
   </div>
@@ -31,7 +31,7 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "New Password Confirmation" %>
   </div>
 
-  <div class="actions">
+  <div class="actions log" >
     <%= f.submit "Sign up" %>
   </div>
 <% end %>

@@ -1,23 +1,22 @@
 <div class="center form">
 <h2>Log in</h2>
-
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
     <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
   </div>
 
-  <div class="field">
+  <div class="field text-center">
     <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="field flx">
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="actions log">
     <%= f.submit "Log in" %>
   </div>
 <% end %>
@@ -26,3 +25,4 @@
 </div>
 
 <%= render "layouts/animation" %>
+
