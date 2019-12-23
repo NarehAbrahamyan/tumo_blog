@@ -13,229 +13,285 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
+ @import "bootstrap";
 
-html{
-    height: 110%;
-}
-
-body{
-    height:100%;
-    background-image: url(/assets/back.png);
-    background-position: center;
-    background-repeat: repeat;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    // position: relative;
-    // background-size: 100% 100%;
-}
-
-h2{
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-.form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba($color: #000000, $alpha: 0.7);
-    width: 50%;
-    padding: 70px 50px;
-    border-radius: 50px;
-}
-
-.center{
-    text-align: center;
-}
-
-.field{
-    width: 20%;
-    margin: auto;
-}
-.field input{
-    width: 200%;
-    border: solid 2px #fff9;
-    outline: none;
-    background: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: 0.5s;
-    margin-top: 15px;
-    transform: translate(-23%,0%);
-    
-}
-.field input:focus{
-    border: solid 2px #fffe;
-    color: #fff;
-}
-.field input[type='checkbox']{
-    width: auto;
-}
-
-.field label{
-    color: #eee;
-}
-.actions input[type='submit']{
-    background: #fffb;
-    border: none;
-    transition: 0.5s;
-    font-size: 20px;
-    margin-top: 15px;
-}
-.actions input[type='submit']:hover{
-    background: #fffe;
-}
-a{
-    display: inline-block;
-    color: #fff;
-    transition: 0.5s;
-    margin-top: 10px;   
-}
-a:hover{
-    color: #fffb;
-}
-
-
-.animation li{
-    position: fixed;
-    display: block;
-    border: solid 12px #fff7;
-    border-radius: 30px;
-    padding: 80px;
-    animation: rotate 2s infinite linear;
-    z-index: -1;
-}
-
-.animation li:nth-child(1){
-    top: 15%;
-    left: 25%;
-    animation-duration: 2.2s;
-}
-
-@media (max-width: 800px) {
-    .animation li:nth-child(1), .animation li:nth-child(3), .animation li:nth-child(5){
-        display: none;
-    }
-}
-
-// @media (max-width: 500px) {
-//     .animation li:nth-child(2), .animation li:nth-child(4), .animation li:nth-child(6){
-//         // display: none;
-    
-// }
-
-.animation li:nth-child(2){
-    top: 40%;
-    left: 1%;
-    animation-duration: 2.8s;
-}
-
-.animation li:nth-child(3){
-    bottom: 15%;
-    left: 30%;
-    animation-duration: 1.8s;
-}
-
-.animation li:nth-child(4){
-    top: 5%;
-    right: 5%;
-    animation-duration: 2s;
-}
-
-.animation li:nth-child(5){
-    top: 35%;
-    right: 20%;
-    animation-duration: 1.6s;
-}
-
-.animation li:nth-child(6){
-    bottom: 2%;
-    right: 1%;
-    animation-duration: 1.4s;
-}
-
-@keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(90deg);
-    }
-}
-.navb{
-    margin-left:calc(100% - 200px);
-}
-.back_set{
-    display: flex;
-}
-.back_set div a{
-    margin:0px;
-}
-.back{
-    margin-left:calc(100% - 280px);
-}
-.back h2{
-    background-color: #fff;
-    transition: 2s;
-    padding:10px 20px 10px 20px;
-}
-.back h2 a{
-    color: black;
-    text-decoration: none;
-}
-.back h2:hover{
-    background-color: #b6b3b3;
-    transition: 2s;
-}
-.unhappy input:hover{
-    background-color: rgba(216, 36, 36, 0.842) !important;
-}
-.link a{
-    margin: 15px;
-}
-
-@media (max-width: 800px) {
-    .field input {
-        width: 200px;
-    }
-    .form{
-        width: 90%;
-    }
-    .form form{
-        margin-right: 67px ;
-    }
-    .log{
-        margin-left:65px;
-    }
-    .flx{
-        display:flex;
-    }
-    // .actions input[type='submit']{
-    //     margin:auto;
-    // }
-}
-
-@media (max-height: 800px) {
-    .form{
-        margin-top: calc(70px);
-        // height: 100px;
-    }
-    html{
-        height: 115%;
-    }
-}
-@media (max-height: 600px) {
-    .form{
-        margin-top: calc(143px);
-        padding: 50px;
-        width:100%;
-    }
-    html{
-        height: 150%;
-    }
-}
+ html{
+     height: 110%;
+ }
+ 
+ body{
+     margin-top: 90px;
+     height:100%;
+     background-image: image-url('back.png');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     // position: relative;
+     // background-size: 100% 100%;
+ }
+ 
+ h2{
+     color: #fff;
+     margin-bottom: 20px;
+ }
+ 
+ .form{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background: rgba($color: #000000, $alpha: 0.7);
+     width: 50%;
+     padding: 70px 50px;
+     border-radius: 50px;
+ }
+ 
+ .center{
+     text-align: center;
+ }
+ 
+ .field{
+     width: 20%;
+     margin: auto;
+ }
+ .field input{
+     width: 200%;
+     border: solid 2px #fff9;
+     outline: none;
+     background: none;
+     color: #fff;
+     padding: 5px 10px;
+     border-radius: 5px;
+     transition: 0.5s;
+     margin-top: 15px;
+     transform: translate(-23%,0%);
+     
+ }
+ .field input:focus{
+     border: solid 2px #fffe;
+     color: #fff;
+ }
+ .field input[type='checkbox']{
+     width: auto;
+ }
+ 
+ .field label{
+     color: #eee;
+ }
+ .actions input[type='submit']{
+     background: #fffb;
+     border: none;
+     transition: 0.5s;
+     font-size: 20px;
+     margin-top: 15px;
+ }
+ .actions input[type='submit']:hover{
+     background: #fffe;
+ }
+ a{
+     display: inline-block;
+     color: #fff;
+     transition: 0.5s;
+     margin-top: 10px;   
+ }
+ a:hover{
+     color: #fffb;
+ }
+ 
+ 
+ .animation li{
+     position: fixed;
+     display: block;
+     border: solid 12px #fff7;
+     border-radius: 30px;
+     padding: 80px;
+     animation: rotate 2s infinite linear;
+     z-index: -1;
+ }
+ 
+ .animation li:nth-child(1){
+     top: 15%;
+     left: 25%;
+     animation-duration: 2.2s;
+ }
+ 
+ @media (max-width: 800px) {
+     .animation li:nth-child(1), .animation li:nth-child(3), .animation li:nth-child(5){
+         display: none;
+     }
+ }
+ 
+ // @media (max-width: 500px) {
+ //     .animation li:nth-child(2), .animation li:nth-child(4), .animation li:nth-child(6){
+ //         // display: none;
+     
+ // }
+ 
+ .animation li:nth-child(2){
+     top: 40%;
+     left: 1%;
+     animation-duration: 2.8s;
+ }
+ 
+ .animation li:nth-child(3){
+     bottom: 15%;
+     left: 30%;
+     animation-duration: 1.8s;
+ }
+ 
+ .animation li:nth-child(4){
+     top: 5%;
+     right: 5%;
+     animation-duration: 2s;
+ }
+ 
+ .animation li:nth-child(5){
+     top: 35%;
+     right: 20%;
+     animation-duration: 1.6s;
+ }
+ 
+ .animation li:nth-child(6){
+     bottom: 2%;
+     right: 1%;
+     animation-duration: 1.4s;
+ }
+ 
+ @keyframes rotate {
+     0%{
+         transform: rotate(0deg);
+     }
+     100%{
+         transform: rotate(90deg);
+     }
+ }
+ .navbar{
+     top: 0;
+     z-index: 10;
+     background: #0d0d0d !important;
+     position: fixed;
+     width: 100%;
+ }
+ 
+ .navbar_secondary{
+     top: 72px;
+     z-index: 9;
+     background: #1d1d1d !important;
+     position: fixed;
+     width: 100%;
+     height: 50px;
+ }
+ 
+ h1 a{
+     color: #f2f4f7 !important;
+ }
+ li a{
+     color: #f2f4f7 !important;
+     padding: 0 5px;
+     margin: 0 5px;
+ }
+ .dropdown{
+     position: relative;
+     background: #333;
+     padding: 10px;
+ }
+ .dropdown ul{
+     display: block;
+     position: absolute;
+     font-size: 0;
+     margin: 0;
+     padding: 0;
+     background: #0d0d0d;
+     transform: translate(-100%,0);
+     margin-top: 20px;
+ }
+ .dropdown ul li a{
+     color: #f2f4f7 !important;
+     text-decoration: none;
+     display: block;
+     padding: 0;
+     margin: 0;  
+ }
+ .dropdown:hover ul li a{
+     padding: 0 5px;
+     margin: 0 5px;
+ }
+ .dropdown:hover ul{
+     font-size: 16px;
+     padding: 10px;
+ }
+ .profileIcon{
+     background: #cacaca;
+     padding: 20px;
+     border-radius: 100%;
+ }
+ .navb{
+     position: absolute;
+     right: 50px;
+ }
+ .back_set{
+     display: flex;
+ }
+ .back_set div a{
+     margin:0px;
+ }
+ .back h2{
+     background-color: #fff;
+     transition: 2s;
+     padding:10px 20px 10px 20px;
+ }
+ .back h2 a{
+     color: black;
+     text-decoration: none;
+ }
+ .back h2:hover{
+     background-color: #b6b3b3;
+     transition: 2s;
+ }
+ .unhappy input:hover{
+     background-color: rgba(216, 36, 36, 0.842) !important;
+ }
+ .link a{
+     margin: 15px;
+ }
+ 
+ @media (max-width: 800px) {
+     .field input {
+         width: 200px;
+     }
+     .form{
+         width: 90%;
+     }
+     .form form{
+         margin-right: 67px ;
+     }
+     .log{
+         margin-left:65px;
+     }
+     .flx{
+         display:flex;
+     }
+     // .actions input[type='submit']{
+     //     margin:auto;
+     // }
+ }
+ 
+ @media (max-height: 800px) {
+     .form{
+         margin-top: calc(70px);
+         // height: 100px;
+     }
+     html{
+         height: 115%;
+     }
+ }
+ @media (max-height: 600px) {
+     .form{
+         margin-top: calc(143px);
+         padding: 50px;
+         width:100%;
+     }
+     html{
+         height: 150%;
+     }
+ }
