@@ -16,14 +16,17 @@
 @import "bootstrap";
 
 html{
-    height: 100%;
+    height: 110%;
 }
 
 body{
-    height: 100%;
+    height:100%;
     background-image: url(/assets/back.png);
-    background-size: 100% 100%;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    // position: relative;
+    // background-size: 100% 100%;
 }
 
 h2{
@@ -117,11 +120,11 @@ a:hover{
     }
 }
 
-@media (max-width: 500px) {
-    .animation li:nth-child(2), .animation li:nth-child(4), .animation li:nth-child(6){
-        display: none;
-    }
-}
+// @media (max-width: 500px) {
+//     .animation li:nth-child(2), .animation li:nth-child(4), .animation li:nth-child(6){
+//         // display: none;
+    
+// }
 
 .animation li:nth-child(2){
     top: 40%;
@@ -159,5 +162,77 @@ a:hover{
     }
     100%{
         transform: rotate(90deg);
+    }
+}
+.navb{
+    margin-left:calc(100% - 200px);
+}
+.back_set{
+    display: flex;
+}
+.back_set div a{
+    margin:0px;
+}
+.back{
+    margin-left:calc(100% - 280px);
+}
+.back h2{
+    background-color: #fff;
+    transition: 2s;
+    padding:10px 20px 10px 20px;
+}
+.back h2 a{
+    color: black;
+    text-decoration: none;
+}
+.back h2:hover{
+    background-color: #b6b3b3;
+    transition: 2s;
+}
+.unhappy input:hover{
+    background-color: rgba(216, 36, 36, 0.842) !important;
+}
+.link a{
+    margin: 15px;
+}
+
+@media (max-width: 800px) {
+    .field input {
+        width: 200px;
+    }
+    .form{
+        width: 90%;
+    }
+    .form form{
+        margin-right: 67px ;
+    }
+    .log{
+        margin-left:65px;
+    }
+    .flx{
+        display:flex;
+    }
+    // .actions input[type='submit']{
+    //     margin:auto;
+    // }
+}
+
+@media (max-height: 800px) {
+    .form{
+        margin-top: calc(70px);
+        // height: 100px;
+    }
+    html{
+        height: 115%;
+    }
+}
+@media (max-height: 600px) {
+    .form{
+        margin-top: calc(143px);
+        padding: 50px;
+        width:100%;
+    }
+    html{
+        height: 150%;
     }
 }
