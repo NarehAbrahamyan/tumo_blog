@@ -48825,3 +48825,68 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.0ms | Allocations: 9266)
 
 
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-12-23 17:09:31 +0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 457)
+Completed 500 Internal Server Error in 446ms (ActiveRecord: 0.0ms | Allocations: 43348)
+
+
+  
+ActionView::Template::Error (Error: error in C function asset-url: undefined method `[]' for "image":SassC::Script::Value::String
+        on line 25:17 of app/assets/stylesheets/application.scss, in function `asset-url`
+        from line 25:17 of app/assets/stylesheets/application.scss
+>>     background: asset-url("back.png", image);
+
+   ----------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:25
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2019-12-23 17:09:57 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 113)
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.0ms | Allocations: 17267)
+
+
+  
+ActionView::Template::Error (Error: error in C function asset-url: undefined method `[]' for "image":SassC::Script::Value::String
+        on line 25:23 of app/assets/stylesheets/application.scss, in function `asset-url`
+        from line 25:23 of app/assets/stylesheets/application.scss
+>>     background-image: asset-url("back.png", image);
+
+   ----------------------^
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     9:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    10:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    11:   </head>
+    12: 
+  
+app/assets/stylesheets/application.scss:25
+app/views/layouts/application.html.erb:9
+Started GET "/" for ::1 at 2019-12-23 17:10:50 +0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 427)
+Completed 200 OK in 2113ms (Views: 2105.4ms | ActiveRecord: 0.0ms | Allocations: 111048)
+
+
