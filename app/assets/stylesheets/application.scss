@@ -21,7 +21,6 @@ html{
 
 body{
     height:100%;
-    // background-image: image-url("/assets/back.png");
     background-image: image-url('back.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -165,17 +164,66 @@ a:hover{
         transform: rotate(90deg);
     }
 }
+.navbar{
+    top: 0;
+    z-index: 10;
+    background: #0d0d0d !important;
+    position: fixed;
+    width: 100%;
+}
+
+h1 a{
+    color: #f2f4f7 !important;
+}
+li a{
+    color: #f2f4f7 !important;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.dropdown{
+    position: relative;
+    background: #333;
+    padding: 10px;
+}
+.dropdown ul{
+    display: block;
+    position: absolute;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    transform: translate(-100%,0);
+    margin-top: 20px;
+}
+.dropdown ul li a{
+    color: #f2f4f7 !important;
+    text-decoration: none;
+    display: block;
+    padding: 0;
+    margin: 0;  
+}
+.dropdown:hover ul li a{
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.dropdown:hover ul{
+    font-size: 16px;
+    padding: 10px;
+}
+.profileIcon{
+    background: #cacaca;
+    padding: 20px;
+    border-radius: 100%;
+}
 .navb{
-    margin-left:calc(100% - 200px);
+    position: absolute;
+    right: 50px;
 }
 .back_set{
     display: flex;
 }
 .back_set div a{
     margin:0px;
-}
-.back{
-    margin-left:calc(100% - 280px);
 }
 .back h2{
     background-color: #fff;
