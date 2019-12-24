@@ -16,11 +16,11 @@
  @import "bootstrap";
 
  html{
-     height: 110%;
+     height: 100%;
  }
  
  body{
-     margin-top: 90px;
+     padding-top: 120px;
      height:100%;
      background-image: image-url('back.png');
      background-position: center;
@@ -171,16 +171,35 @@
      background: #0d0d0d !important;
      position: fixed;
      width: 100%;
+     padding-left: 10%;
  }
  
- .navbar_secondary{
+ .secondaryMenu{
      top: 72px;
      z-index: 9;
      background: #1d1d1d !important;
      position: fixed;
      width: 100%;
      height: 50px;
+     padding: 0 15%;
  }
+ .secondaryMenu li{
+    color: #f2f4f7;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.secondaryMenu li:hover{
+    color: #87B3B9;
+}
+.secondaryMenu .active{
+    color: #23747F;
+}
+.secondaryMenu .active:hover{
+    color: #23747F;
+}
+.secondaryMenu li:nth-child(1){
+    margin-left: 0;
+}
  
  h1 a{
      color: #f2f4f7 !important;
