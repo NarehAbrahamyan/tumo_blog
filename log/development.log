@@ -55183,3 +55183,24 @@ Processing by StaticPagesController#home as HTML
 Completed 200 OK in 42ms (Views: 41.7ms | ActiveRecord: 0.2ms | Allocations: 10239)
 
 
+Started GET "/" for ::1 at 2019-12-25 16:34:45 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/home.html.erb:8
+  Rendered layouts/_post_w_img.html.erb (Duration: 1.0ms | Allocations: 163)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.4ms | Allocations: 163)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 24.1ms | Allocations: 10016)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 470)
+Completed 200 OK in 235ms (Views: 227.3ms | ActiveRecord: 0.8ms | Allocations: 64214)
+
+
