@@ -95,10 +95,10 @@ body{
     border-radius: 15px;
     margin: 20px 0;
     color: #F8F5ED;
-    height: 100vh;
+    height: 90vh;
     padding: 30px;
     z-index: 8 !important;
-    top:80px !important;
+    top:150px !important;
 }
 .sidbar-content{
     width: inherit;
@@ -110,23 +110,45 @@ body{
 }
 .tumo_path{
     width: inherit;
-    height: 4.7%;
-    background-color: #11373C;
+    height: 5%;
+    background-color: #3d3d3d;
     text-align: center;
-    margin-top: 15px;
-    
+    margin-top: 10px;
+    position: relative;
+    border-radius: 25px;
+    transition: 0.5s;
 }
-.tumo_path::after{
-    content: "";
-    width: 90%;
+.tumo_path p{
     position: absolute;
-    top :110%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    height: 2px;
-    background-color: #F8F5ED;
-    margin-bottom: 15px;
+    top: 50%;
+    left: 15%;
+    width: 70%;
+    transform: translate(0%,-50%);
+    transition: 0.5s;
+    background: red($color: #000000);
+}
+.tumo_path:hover p{
+    left: calc(10% + 30px);
+}
+.tumo_path p::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    background-size: 0 0;
+    width: 0;
+    height: 0;
+    border-radius: 50px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.tumo_path:hover p:before{
+    width: 35px;
+    height: 35px;
+    background: #333;
+    background-size: 35px 40px;
 }
 // post
 .post-feed{
@@ -192,14 +214,26 @@ body{
 //     }
 //   }
 
+.sidbar-content div{
+    transition: 0.5s;
+}
 
-$colors-list:  #000000 #faa61c #8cc542 #4c86c6 #f15a2d
+$colors-list:  #000000 #faa61c #8cc542 #f15a2d #4c86c6 
 #742874 #be82b9 #9f326f #58672e #757c35 #a1a475 #b95c47 #c02230
 #18aebc #6e98ce;
 @each $current-color in $colors-list {
     $i: index($colors-list, $current-color);
-    .sidbar-content div:nth-child(#{$i}):hover{   
-            background-color: $current-color;
-            transition: 0.5s;
+    .sidbar-content div:nth-child(#{$i}):hover p{   
+            color: $current-color;
+    }
+}
+
+$icon-list:  '' 'Animation-icon.png' 'Game-icon.png' 'Film-icon.png' 'Web-icon.png' 'Music-icon.png'
+'Writing-icon.png' 'Drawing-icon.png' 'Graphics-icon.png' '3D-icon.png' 'Programming-icon.png' 
+'Robotics-icon.png' 'Motion-Graphics-icon.png' 'Photo-icon.png' 'New-Media-icon.png';
+@each $current-icon in $icon-list {
+    $i: index($icon-list, $current-icon);
+    .sidbar-content div:nth-child(#{$i}) p::before{   
+            background-image: url($current-icon);
     }
 }
