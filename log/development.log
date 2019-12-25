@@ -55995,3 +55995,41 @@ Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.2ms | Allocations: 940
 >>>>>>> 23f3ae4975d1e56c4146ff07c033bb0106e0078f
 
 
+Started GET "/" for ::1 at 2019-12-25 16:43:15 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/Users/admin/Desktop/tumo_blog/app/controllers/static_pages_controller.rb:3: syntax error, unexpected <<
+<<<<<<< HEAD
+^~
+/Users/admin/Desktop/tumo_blog/app/controllers/static_pages_controller.rb:22: syntax error, unexpected >>, expecting end
+>>>>>>> 23f3ae4975d1e56c4146ff0...
+^~):
+  
+app/controllers/static_pages_controller.rb:3: syntax error, unexpected <<
+app/controllers/static_pages_controller.rb:22: syntax error, unexpected >>, expecting end
+app/controllers/static_pages_controller.rb:3: syntax error, unexpected <<
+app/controllers/static_pages_controller.rb:22: syntax error, unexpected >>, expecting end
+app/controllers/static_pages_controller.rb:3: syntax error, unexpected <<
+app/controllers/static_pages_controller.rb:22: syntax error, unexpected >>, expecting end
+Started GET "/" for ::1 at 2019-12-25 16:44:18 +0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/static_pages/home.html.erb:8
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 24.4ms | Allocations: 10059)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 472)
+Completed 200 OK in 2904ms (Views: 2896.7ms | ActiveRecord: 0.8ms | Allocations: 142545)
+
+
