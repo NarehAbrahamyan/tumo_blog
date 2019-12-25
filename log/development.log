@@ -55263,3 +55263,197 @@ Processing by PostsController#new as HTML
 Completed 200 OK in 1780ms (Views: 1777.8ms | ActiveRecord: 0.2ms | Allocations: 124911)
 
 
+Started GET "/posts/new" for ::1 at 2019-12-25 04:09:46 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 880)
+Completed 500 Internal Server Error in 204ms (ActiveRecord: 0.2ms | Allocations: 21894)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "}": expected selector or at-rule, was "} "
+        on line 95:2 of app/assets/stylesheets/application.scss
+>> }
+
+   -^
+):
+     8:     <%= csrf_meta_tags %>
+     9:     <%= csp_meta_tag %>
+    10:     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    11:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    12:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    13:   </head>
+    14: 
+  
+app/assets/stylesheets/application.scss:95
+app/views/layouts/application.html.erb:11
+Started GET "/posts/new" for ::1 at 2019-12-25 04:09:57 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 1811ms (Views: 1808.1ms | ActiveRecord: 0.2ms | Allocations: 124914)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 04:10:38 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1276)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 978)
+Completed 200 OK in 82ms (Views: 78.8ms | ActiveRecord: 0.4ms | Allocations: 20073)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 04:10:43 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.8ms | Allocations: 760)
+  Rendered posts/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1166)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 100ms (Views: 92.2ms | ActiveRecord: 0.2ms | Allocations: 37313)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 04:10:57 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.4ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.2ms | Allocations: 19597)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 04:11:00 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 899)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 1.8ms | Allocations: 971)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.5ms | Allocations: 19533)
+
+
+Started GET "/posts/3/edit" for ::1 at 2019-12-25 04:11:02 +0400
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (5.8ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/edit.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.4ms | Allocations: 815)
+  Rendered posts/edit.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1076)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 1.6ms | Allocations: 977)
+Completed 200 OK in 85ms (Views: 72.4ms | ActiveRecord: 6.0ms | Allocations: 22029)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 04:11:09 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 902)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 971)
+Completed 200 OK in 80ms (Views: 78.0ms | ActiveRecord: 0.6ms | Allocations: 19565)
+
+
+Started GET "/posts/3" for ::1 at 2019-12-25 04:11:22 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 2.2ms | Allocations: 976)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 0.4ms | Allocations: 19574)
+
+
+Started GET "/posts/3" for ::1 at 2019-12-25 04:15:59 +0400
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:68:in `set_post'
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 2.0ms | Allocations: 971)
+Completed 200 OK in 72ms (Views: 69.6ms | ActiveRecord: 0.5ms | Allocations: 19288)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 04:16:00 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1158)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/layouts/_navbar.html.erb:9
+  Rendered layouts/_navbar.html.erb (Duration: 2.1ms | Allocations: 971)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.4ms | Allocations: 27151)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 04:16:05 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 759)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 859)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 72ms (Views: 68.8ms | ActiveRecord: 0.2ms | Allocations: 19600)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 04:17:14 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.0ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 857)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 66ms (Views: 63.9ms | ActiveRecord: 0.3ms | Allocations: 19604)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 04:19:45 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 1.1ms | Allocations: 757)
+  Rendered posts/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 101)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 0.3ms | Allocations: 31509)
+
+
