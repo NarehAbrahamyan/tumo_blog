@@ -13,16 +13,25 @@
           </li>
           <li class="navbar-text">
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></li>
+          <li class="navbar-text"><a href="<%= static_pages_help_path %>">Help</a></li>
         </ul>
       </li>
       <% else %>
       <li class="navbar-text"><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></li>
       <li class="navbar-text"><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></li>
+      <li class="navbar-text"><a class="navbar-brand" href="<%= static_pages_help_path %>/static_pages/help"><i class="fas fa-question-circle"></i></a></li>
       <% end %>
     </ul>
   </div>
 </nav>
 
 <% if user_signed_in? %>
-
+<nav class="secondaryMenu navbar-expand-lg">
+    <ul class="navbar-nav">
+      <li class="navbar-text active"> <i class="fas fa-user"></i> For you </li>
+      <li class="navbar-text"> <i class="fas fa-angle-double-up"></i> Trending </li>
+      <li class="navbar-text"> <i class="fas fa-certificate"></i> New </li>
+    </ul>
+  </div>
+</nav>
 <% end %>
