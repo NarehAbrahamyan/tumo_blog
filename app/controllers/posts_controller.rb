@@ -5,6 +5,23 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+
+    @direction=[
+      'Animation',
+      'Game Development',
+      'Filmmaking',
+      'Web Development',
+      'Music',
+      'Writing',
+      'Drawing',
+      'Graphic Design',
+      '3D Modeling',
+      'Programming',
+      'Robotics',
+      'Motion Graphics',
+      'Photography',
+      'New Media'
+    ]
   end
 
   # GET /posts/1
@@ -66,6 +83,9 @@ class PostsController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_post
       @post = Post.find(params[:id])
+
+
+      
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

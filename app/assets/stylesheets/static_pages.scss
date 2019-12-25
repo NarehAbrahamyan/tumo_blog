@@ -111,7 +111,7 @@ body{
 .tumo_path{
     width: inherit;
     height: 4.7%;
-    background-color: #11373C !important;
+    background-color: #11373C;
     text-align: center;
     margin-top: 15px;
     
@@ -181,4 +181,25 @@ body{
     height: 50px;
     border-radius: 1550px;
     background-color: #11373C;
+}
+// $base-color: #036;
+
+// @for $i from 0 through 3 {
+//     .sidbar-content div:nth-child(3n + #{$i}):hover{
+//         // background-color: green;
+
+//       background-color: lighten($base-color, $i * 5%);
+//     }
+//   }
+
+
+$colors-list:  #000000 #faa61c #8cc542 #4c86c6 #f15a2d
+#742874 #be82b9 #9f326f #58672e #757c35 #a1a475 #b95c47 #c02230
+#18aebc #6e98ce;
+@each $current-color in $colors-list {
+    $i: index($colors-list, $current-color);
+    .sidbar-content div:nth-child(#{$i}):hover{   
+            background-color: $current-color;
+            transition: 0.5s;
+    }
 }
