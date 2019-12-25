@@ -56896,3 +56896,138 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.3ms | Allocations: 11018)
 
 
+Started GET "/" for ::1 at 2019-12-25 16:57:08 +0400
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static_pages/home.html.erb:8
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 36.5ms | Allocations: 3404)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 523)
+Completed 200 OK in 272ms (Views: 258.3ms | ActiveRecord: 1.7ms | Allocations: 93627)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-25 16:57:10 +0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 604)
+  Rendered layouts/_animation.html.erb (Duration: 0.2ms | Allocations: 89)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.4ms | Allocations: 9026)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 184)
+Completed 200 OK in 44ms (Views: 32.9ms | ActiveRecord: 0.0ms | Allocations: 24911)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-25 16:57:13 +0400
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"g7fnBIC7v/neanWAn9HYsz6DesOWAcSqPnR+r52M4iUG4aRxcxsYn22UcGQnv/pnSDEbq3b8eNkAKbXY1WLzNA==", "user"=>{"email"=>"tigran.13.03.2004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "tigran.13.03.2004@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.3ms | Allocations: 2157)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"g7fnBIC7v/neanWAn9HYsz6DesOWAcSqPnR+r52M4iUG4aRxcxsYn22UcGQnv/pnSDEbq3b8eNkAKbXY1WLzNA==", "user"=>{"email"=>"tigran.13.03.2004@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered layouts/_animation.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 877)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 145ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 10127)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-25 16:57:14 +0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 207)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 115)
+  Rendered layouts/_animation.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 183)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 10778)
+
+
+Started POST "/users" for ::1 at 2019-12-25 16:57:20 +0400
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"fVXkvLSVi0f+H2L8mYjoM/g+ABDt4BeVicsJgs/Q35qFPoEY0PsqANr2IWD6oX7uqpqgJNfBk3+lX5rFg8Lj3A==", "user"=>{"username"=>"tigran", "name"=>"Tigran", "email"=>"tigran.13.03.2004@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+[31mUnpermitted parameter: :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tigran.13.03.2004@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name", "username") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "tigran.13.03.2004@gmail.com"], ["encrypted_password", "$2a$11$8ky23H3weBVH6aAbaVgS3.ri09fnPIqMyH7Imwch69graBI4p4aLK"], ["created_at", "2019-12-25 12:57:20.309246"], ["updated_at", "2019-12-25 12:57:20.309246"], ["name", "Tigran"], ["username", "tigran"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 138ms (ActiveRecord: 2.1ms | Allocations: 9627)
+
+
+Started GET "/" for ::1 at 2019-12-25 16:57:20 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static_pages/home.html.erb:8
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.3ms | Allocations: 116)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.2ms | Allocations: 113)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1999)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 136)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 9814)
+
+
+Started GET "/" for ::1 at 2019-12-25 16:57:26 +0400
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/static_pages/home.html.erb:8
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_w_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_post_wo_img.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1485)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 123)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 9245)
+
+
+Started GET "/posts" for ::1 at 2019-12-25 16:57:46 +0400
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/index.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:24
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:39
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:24
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/views/posts/index.html.erb:24
+  Rendered posts/index.html.erb within layouts/application (Duration: 13.2ms | Allocations: 9000)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 107)
+Completed 200 OK in 77ms (Views: 48.7ms | ActiveRecord: 1.0ms | Allocations: 18648)
+
+
+Started GET "/posts/new" for ::1 at 2019-12-25 16:58:10 +0400
+Processing by PostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/posts_controller.rb:18:in `new'
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 18.3ms | Allocations: 1425)
+  Rendered posts/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 1791)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 106)
+Completed 200 OK in 52ms (Views: 28.1ms | ActiveRecord: 0.1ms | Allocations: 16345)
+
+
