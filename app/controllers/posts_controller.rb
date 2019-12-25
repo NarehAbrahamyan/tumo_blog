@@ -4,13 +4,29 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.order(created_at: :desc)
+    @direction=[
+    'Animation',
+    'Game Development',
+    'Filmmaking',
+    'Web Development',
+    'Music',
+    'Writing',
+    'Drawing',
+    'Graphic Design',
+    '3D Modeling',
+    'Programming',
+    'Robotics',
+    'Motion Graphics',
+    'Photography',
+    'New Media'
+  ]
   end
-
   # GET /posts/1
   # GET /posts/1.json
   def show
-
+    @comment=Comment.new
+    @comments=@post.comments.order("created_at DESC")
   end
 
   # GET /posts/new
