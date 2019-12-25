@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :set_post, only: [:show, :edit, :update, :destroy,:upvote,:downvote]
 
   # GET /posts
   # GET /posts.json
@@ -17,7 +17,17 @@ class PostsController < ApplicationController
   def new
     @post = current_user.posts.build
   end
-
+  #POSTS UPVOTE 
+  def upvote
+    @post = Post.find(params[:id])
+    @post.downvote_by(current_user)
+    redirect_back(fallback_location: root_path)
+  end 
+  def downvote
+    @post = Post.find(params[:id]) 
+    @post.upvote_by(current_user)
+    redirect_back(fallback_location: root_path)
+  end   
   # GET /posts/1/edit
   def edit
   end

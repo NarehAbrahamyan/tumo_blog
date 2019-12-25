@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+ 
 
 
 <div class="container">
@@ -12,11 +12,11 @@
 
         <div class="row post">
             <div class="col-md-2 upvote  d-none d-xs-none d-md-block" >
-                <div class="col-12 justify-self-center upvote-icon">
-                </div>
-                <p class="font-weight-bold upvote-num"> <%=post.votes%></p>
-                <div class="col-12 justify-self-center downvote-icon">
-                </div>
+                <%= link_to '' , up_post_path(post),method: :put,class:"col-12 justify-self-center upvote-icon "%>
+                  <i class="fas fa-arrow-up" style="transform: translate(400%, -400%);" ></i>
+                <p class="font-weight-bold upvote-num"> <%=post.get_downvotes.size-post.get_upvotes.size%></p>
+                <%= link_to '' , down_post_path(post),method: :put,class:"col-12 justify-self-center downvote-icon "%>
+                  <i class="fas fa-arrow-down" style="transform: translate(400%, -400%);"></i>
             </div>
             <div class="col-md-9 col-sm-12  post-content" >
               <div class="row post-top">
