@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'questions/index'
+  get 'questions/new'
+  get 'questions/delete'
   devise_for :users
   root 'static_pages#home'
   
