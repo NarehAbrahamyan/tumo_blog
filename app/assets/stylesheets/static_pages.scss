@@ -97,7 +97,8 @@ body{
     color: #F8F5ED;
     height: 100vh;
     padding: 30px;
-    z-index: -100;
+    z-index: 8 !important;
+    top:80px !important;
 }
 .sidbar-content{
     width: inherit;
@@ -109,7 +110,7 @@ body{
 }
 .tumo_path{
     width: inherit;
-    height: 5%;
+    height: 4.7%;
     background-color: #11373C !important;
     text-align: center;
     margin-top: 15px;

@@ -1,25 +1,105 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+<div class="container">
+  <div class="row new-post">
+      <%= link_to 'New Post', new_post_path %>
+  </div>
+  <div class="row ">
+    <div class="col-md-8 col-sm-12 post-feed" >
     <% @posts.each do |post| %>
-      <tr>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+
+        <div class="row post">
+            <div class="col-md-2 upvote  d-none d-xs-none d-md-block" >
+                <div class="col-12 justify-self-center upvote-icon">
+                </div>
+                <p class="font-weight-bold upvote-num"> <%=post.votes%></p>
+                <div class="col-12 justify-self-center downvote-icon">
+                </div>
+            </div>
+            <div class="col-md-9 col-sm-12  post-content" >
+              <div class="row post-top">
+                <div class="col-sm-12">
+                  <p class="post-title float-left"><%=post.user_id%></p>
+                  <p class="post-title float-right" ><%=post.category%></p>
+                </div>
+
+              </div>
+            <div class="row post-box">
+
+            <div class="col-sm-12 post-text" >
+              <p><%=post.description%></p>
+            </div>
+
+          </div>
+          <div class="row post-bottom ">
+            <div class="col-sm-12 post-bottom-cont"> 
+            <%= link_to 'Show', post %>
+            <%= link_to 'Edit', edit_post_path(post) %>
+            <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+       
+       
+    
     <% end %>
-  </tbody>
-</table>
+    </div>
+    <div class="col-md-3  sidebar justify-content-center text-align-center d-none d-xs-none d-md-flex sticky-top " >
+        <div class="sidbar-content">  
+          <h3 class="col-12 sidebar-title " >SIDEBAR</h3>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+          <div class="col-12 tumo_path ">
+            <p class="text-center text-capitalize ">Animation</p>
+          </div>
+        </div>  
+</div>
+</div>
+</div>
 
-<br>
 
-<%= link_to 'New Post', new_post_path %>
+
