@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-
+ 
 
 
 <div class="container">
@@ -12,11 +12,11 @@
 
         <div class="row post">
             <div class="col-md-2 upvote  d-none d-xs-none d-md-block" >
-                <div class="col-12 justify-self-center upvote-icon">
-                </div>
-                <p class="font-weight-bold upvote-num"> <%=post.votes%></p>
-                <div class="col-12 justify-self-center downvote-icon">
-                </div>
+                <%= link_to '' , up_post_path(post),method: :put,class:"col-12 justify-self-center upvote-icon "%>
+                  <i class="fas fa-arrow-up" style="transform: translate(400%, -400%);" ></i>
+                <p class="font-weight-bold upvote-num"> <%=post.get_downvotes.size-post.get_upvotes.size%></p>
+                <%= link_to '' , down_post_path(post),method: :put,class:"col-12 justify-self-center downvote-icon "%>
+                  <i class="fas fa-arrow-down" style="transform: translate(400%, -400%);"></i>
             </div>
             <div class="col-md-9 col-sm-12  post-content" >
               <div class="row post-top">
@@ -27,11 +27,18 @@
 
               </div>
             <div class="row post-box">
-
+            <%if post.media=='' %>
             <div class="col-sm-12 post-text" >
               <p><%=post.description%></p>
             </div>
-
+            <% else %>
+            <div class="col-sm-5 post-image " >
+              <iframe src="<%=post.media%>"></iframe>
+            </div>
+            <div class="col-sm-7 post-text" >
+              <p><%= post.description%></p>
+            </div>
+            <% end %>
           </div>
           <div class="row post-bottom ">
             <div class="col-sm-12 post-bottom-cont"> 
@@ -53,51 +60,11 @@
     <div class="col-md-3  sidebar justify-content-center text-align-center d-none d-xs-none d-md-flex sticky-top " >
         <div class="sidbar-content">  
           <h3 class="col-12 sidebar-title " >SIDEBAR</h3>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
-          <div class="col-12 tumo_path ">
-            <p class="text-center text-capitalize ">Animation</p>
-          </div>
+          <% for num  in @direction do %>
+            <div class="col-12 tumo_path ">
+              <p class="text-center text-capitalize "><%= num %></p>
+            </div>
+          <% end %>
         </div>  
 </div>
 </div>

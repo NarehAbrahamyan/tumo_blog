@@ -16,7 +16,7 @@
   <div class="container-fluid">
   <div class="row">
   <div class=" col-4 field-posts category text-center">
-        <%= form.select :category, options_for_select(["1", "2", "3", "4", "5", "6","7","8","9","10","11","12","13","14"],:disabled => ["Select One"]), :class => 'genForm_dropBox'  %>
+        <%= form.select :category, options_for_select(['Animation','Game Development','Filmmaking','Web Development','Music','Writing','Drawing','Graphic Design','3D Modeling','Programming','Robotics','Motion Graphics','Photography','New Media'],:disabled => ["Select One"]), :class => 'genForm_dropBox'  %>
   </div>
     <div class=" col-8 field-posts media text-center">
     <%= form.text_field :media, autocomplete: "media", placeholder: "Media URL"  %>
