@@ -214,6 +214,46 @@ body{
 .sidbar-content div{
     transition: 0.5s;
 }
+.ing{
+    color: #23747F !important;
+    text-align: center;
+   
+ }
+  
+ .helpmails{
+    position: absolute;
+    bottom: 0;
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 25px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    bottom: 2%;
+   
+ }
+ a{
+  
+    color: #23747F !important;
+ }
+  
+ h2{
+    color:  #23747F !important;;
+ }
+ .abc{
+    color: #23747F !important ;
+    text-align: center !important;
+ }
+ .q{
+    padding-left: 65px;
+    text-align: center;
+ }
+ .help-cont{
+    padding: 20px;
+    border-radius: 25px;
+    background-color: whitesmoke;
+  
+ }
+ 
 
 $colors-list:  #000000 #faa61c #8cc542 #f15a2d #4c86c6 
 #742874 #be82b9 #9f326f #58672e #757c35 #a1a475 #b95c47 #c02230

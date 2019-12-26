@@ -138,6 +138,10 @@
 .back-btn:hover{
     background: #23747F;
 }
+.back-btn:hover{
+    background: #23747F;
+}
+
 .navbar{
     top: 0;
     z-index: 10;
@@ -213,6 +217,7 @@ li a{
     transition: 2s;
     padding:10px 20px 10px 20px;
 }
+
 .show-content{
     height: 80vh;
 }
@@ -237,6 +242,7 @@ li a{
 .show-btn:hover{
     background: #23747F;
 }
+
  .actions input[type='submit']{
      background: #fffb;
      border: none;
@@ -483,9 +489,9 @@ li a{
 .comment_form{
     display: flex;
     justify-content: space-around;
-    
-}
-.comment_form input{
+   
+ }
+ .comment_form input{
     margin: 0 auto;
     background-color: #1d1d1d;
     border-radius: 15px;
@@ -493,16 +499,16 @@ li a{
     height: 30px;
     color: white;
     outline: none;
-}
-.comment_form input[type=submit]{
+ }
+ .comment_form input[type=submit]{
     transition: 0.2s linear;
-
-}
-.comment_form input[type=submit]:hover {
+  
+ }
+ .comment_form input[type=submit]:hover {
     background-color: #23747F;
     color: white;
-}
-.comment_form #comment_body{
+ }
+ .comment_form #comment_body{
     width: 90%;
 }
 .comment-row{
