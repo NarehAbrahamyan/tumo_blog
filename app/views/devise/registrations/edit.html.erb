@@ -12,6 +12,7 @@
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
     <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
   <% end %>
+  
  <div class="field">
     <%= f.text_field :username, autofocus: true,placeholder: " New UserName" %>
   </div>
@@ -34,8 +35,11 @@
   <div class="field">
     <%= f.password_field :password, autocomplete: "current-password", placeholder: "old Password"%>
   </div>
-
+ 
   <div class="actions text-center">
+   <div class="field" >
+    <%= f.file_field :avatar %>
+  </div>
     <%= f.submit "Update" %>
   </div>
 <% end %>
