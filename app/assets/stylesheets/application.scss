@@ -78,47 +78,61 @@
  .field label{
      color: #eee;
  }
- .field-posts input{
-     width: 100%;
-     height: 200px;
-     background-color: #1d1d1d;
-     border-radius: 20px;
-     border: 0px;
-    color: #f2f4f7; 
- }
- .category select{
-     margin-top: 20px;
-     width: 100%;
-     background-color: #1d1d1d;
-    border-radius: 20px;
-    color: white;
-} 
- .category select option{
-     width: 100%;
-     height: 20px;
-     background-color: #1d1d1d;
-     border-radius: 20px;
-     margin: 5px;
-        
-    }
+ .field-posts textarea{
+    width: 100%;
+    height: 200px;
+    background-color: #1d1d1d;
+    border-radius: 20px 20px 5px;
+    border: 0px;
+   color: #f2f4f7;
+   padding: 10px;
+   outline: none;
+}
+.field-posts input{
+   width: 100%;
+   background-color: #1d1d1d;
+   border-radius: 20px;
+   border: 0px;
+  color: #f2f4f7;
+  padding: 5px 15px;
+  outline: none;
+  outline: none;
+  transition: 0.5s;
+}
+.category select{
+    margin-top: 20px;
+    width: 100%;
+    background-color: #1d1d1d;
+   border-radius: 20px;
+   color: white;
+   outline: none;
+   border: none;
+}
+.field-posts input[type='submit']:hover{
+   background: #23747F;
+}
+
+
  .media input{
-     height: 30px !important;
      margin-top: 20px;
  }
 .new-subm{
 
     margin: 20px auto;
 }
-.new-subm input{
-    height: 30px;
-}
 .back-btn{
-    margin: 0 auto;
     position: relative;
-    transform: translate(250%, 0px);
     text-align: center;
-
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
 }
+.back-btn:hover{
+    background: #23747F;
+}
+
 .navbar{
     top: 0;
     z-index: 10;
@@ -193,15 +207,8 @@ li a{
     background-color: #fff;
     transition: 2s;
     padding:10px 20px 10px 20px;
-.back-btn::after{
-    content: "";
-    top: -10px;
-    left: 0px;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #23747F;
 }
+
 .show-content{
     height: 80vh;
 }
@@ -216,20 +223,17 @@ li a{
     height: 10%;
 }
 .show-btn{
-    margin: 0 auto;
     position: relative;
-    transform: translate(150%, 0px);
     text-align: center;
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
 }
-.show-btn::after{
-    content: "";
-    top: -10px;
-    left: 0px;
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: #23747F;
+.show-btn:hover{
+    background: #23747F;
 }
+
  .actions input[type='submit']{
      background: #fffb;
      border: none;
@@ -474,45 +478,43 @@ li a{
 .comment_form{
     display: flex;
     justify-content: space-around;
-    
-}
-.comment_form input{
+   
+ }
+ .comment_form input{
     margin: 0 auto;
     background-color: #1d1d1d;
     border-radius: 15px;
     border: 0px;
     height: 30px;
     color: white;
-}
-.comment_form input[type=submit]{
+    outline: none;
+ }
+ .comment_form input[type=submit]{
     transition: 0.2s linear;
-
-}
-.comment_form input[type=submit]:hover {
+  
+ }
+ .comment_form input[type=submit]:hover {
     background-color: #23747F;
     color: white;
-}
-.comment_form #comment_body{
+ }
+ .comment_form #comment_body{
     width: 90%;
-}
-.comment-row{
-    background-color: #11373C;
-    border-radius: 15px;
+ }
+ .comment-row{
     color: white;
-    margin: 10px 0;
-}
-.comment-time{
-    background-color: #1d1d1d;
-    border-radius: 15px;
-}
-.comment-username{
-    background-color: #1d1d1d;
-    border-radius: 15px;
-}
-.comment-text{
-    background-color: #1d1d1d;
-    border-radius: 15px;
-}
+    margin: 15px 0;
+    padding: 10px 0;
+    border-bottom: dashed 2px #3c3c3c;
+ }
+ .comment-time{
+    font-size: 10px;
+    font-weight: 200;
+ }
+ .comment-username{
+    font-size: 16px;
+    font-weight: 800;
+ }
+ 
  @media (max-height: 800px) {
      .form{
          margin-top: calc(70px);
@@ -532,4 +534,3 @@ li a{
          height: 150%;
      }
  }
-}

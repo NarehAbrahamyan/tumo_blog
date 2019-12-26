@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_12_23_144943) do
-=======
 ActiveRecord::Schema.define(version: 2019_12_25_214451) do
->>>>>>> ver_0_2
 
   create_table "comments", force: :cascade do |t|
     t.text "body"
@@ -26,8 +22,16 @@ ActiveRecord::Schema.define(version: 2019_12_25_214451) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-# Could not dump table "posts" because of following StandardError
-#   Unknown type 'array' for column 'vote_arr'
+  create_table "posts", force: :cascade do |t|
+    t.text "description"
+    t.text "category"
+    t.text "media"
+    t.integer "votes"
+    t.integer "user_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_posts_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
