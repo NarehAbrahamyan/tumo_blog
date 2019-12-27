@@ -232,7 +232,6 @@ body{
    
  }
  a{
-  
     color: #23747F !important;
  }
   
@@ -253,8 +252,34 @@ body{
     background-color: whitesmoke;
   
  }
- 
-
+ .home-text{
+     color: white;
+     font-size: 15px;
+     border-radius: 15px;
+     border: 1px white solid ;
+     margin: 15px 0;
+ }
+ .link_post:hover{
+     background-color: #11373C;
+     
+ }
+ .link_post{
+  justify-self: center;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px white solid;   
+ }
+.post_link{
+    margin: 0 auto;
+} 
+.txt_post{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+.home-cont{
+    margin: auto 0;
+}
 $colors-list:  #000000 #faa61c #8cc542 #f15a2d #4c86c6 
 #742874 #be82b9 #9f326f #58672e #757c35 #a1a475 #b95c47 #c02230
 #18aebc #6e98ce;

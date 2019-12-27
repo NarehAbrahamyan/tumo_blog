@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'users/show'
   devise_for :users
-  root 'posts#index'
+  root 'static_pages#home'
   
   get 'static_pages/help'
   get 'users/:id' => 'users#show'
