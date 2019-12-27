@@ -6,112 +6,38 @@
 <% end %>
 
 <% if user_signed_in? %>
-
-<h1 class="trend" > Trending Today </h1>
-<div class="container">
- <div class="row">
-    <div class ="col-lg-4 col-sm-12 top-viewed-card " >
-        <div class="content" >
-        </div>
-        <div class="content-flow" >
-           <h4 class="content-title" >Post Title </h4>  
-           <p class="content-disc" >Discription</p>
-           <p class="content-username" >username</p>
-        </div> 
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6">
+        <div class="row">
+          <%# username %>
+          <div class="col-12 ">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
+          <div class="col-12">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
+          <%# Name %>
+          <div class="col-12">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
+          <div class="col-12">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
+          <%# Email %>
+          <div class="col-12">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
+          <div class="col-12">
+            <p class="text-left"><%= current_user.name %></p>
+          </div>
       </div>
-   <div class ="col-lg-4 col-sm-12 top-viewed-card " >
-      <div class="content" >
+      <div class="col-xs-12 col-md-6">
+      
       </div>
-      <div class="content-flow" >
-         <h4 class="content-title" >Post Title </h4>  
-         <p class="content-disc" >Discription</p>
-         <p class="content-username" >username</p>
-      </div> 
     </div>
-  <div class ="col-lg-4 col-sm-12 top-viewed-card " >
-    <div class="content" >
-    </div>
-    <div class="content-flow" >
-       <h4 class="content-title" >Post Title </h4>  
-       <p class="content-disc" >Discription</p>
-       <p class="content-username" >username</p>
-    </div> 
-  </div>
- </div>
-</div>
-<div class="container">
-  <div class="row ">
-    <div class="col-md-8 col-sm-12 post-feed" >
-        <%= render "layouts/post_w_img" %>
-        <%= render "layouts/post_wo_img" %>
-        <%= render "layouts/post_w_img" %>
-        <%= render "layouts/post_wo_img" %>
-        <%= render "layouts/post_w_img" %>
-        <%= render "layouts/post_wo_img" %>
-        <%= render "layouts/post_w_img" %>
-        <%= render "layouts/post_wo_img" %>
-      </div>
 
-    <div class="col-md-3  sidebar justify-content-center text-align-center d-sm-none d-md-flex sticky-top " >
-              <div class="sidbar-content">  
-                <h3 class="col-12 sidebar-title " >SIDEBAR</h3>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-                <div class="col-12 tumo_path ">
-                  <p class="text-center text-capitalize ">Animation</p>
-                </div>
-              </div>  
-    </div>
   </div>
-  </div>
-</div>
-
-
 <% else %>
-  <div class = "col-md-12 search_div" > 
-  <form class="form-inline my-2 my-lg-0 justify-content-center">
-      <input class="form-control mr-sm-2 col-md-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0 rounded-pill" type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
+  
 <% end %>
