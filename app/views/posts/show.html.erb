@@ -1,60 +1,61 @@
 <p id="notice"><%= notice %></p>
 <%# @post.description %>
 <div class="container">
-   <div class="row post">
-   <div class="col-md-12 col-sm-12  post-content show-content" >
-   <% if @post.user_id==current_user.id %>
+    <div class="row post">
+    <div class="col-md-12 col-sm-12  post-content show-content" >
+    <% if @post.user_id==current_user.id %> 
 <%= link_to 'Edit', edit_post_path(@post),class:"show-btn col-2 " %>
 <% end%>
 <%= link_to 'Back', posts_path ,class:"back-btn col-2 "%>
-     <div class="row post-top">
-       <div class="col-sm-12">
-         <p class="post-title float-left"><%= User.find(@post.user_id).username%></p>
-         <p class="post-title float-right" ><%=@post.category%></p>
-       </div>
-     </div>
-     <div class="row post-box">
-     <%if @post.media=='' %>
-     <div class="col-sm-12 post-text" >
-       <p><%=@post.description%></p>
-     </div>
-     <% else %>
-     <div class="col-sm-5 post-image " >
-       <iframe src="<%=@post.media%>"></iframe>
-     </div>
-     <div class="col-sm-6 post-text" >
-       <p><%= @post.description%></p>
-     </div>
-     <% end %>
-     </div>
-     <div class="row post-bottom ">
-       <div class="col-sm-12 post-bottom-cont">
-           <p> Comments</p>
-           <div class="container" >
+      <div class="row post-top">
+        <div class="col-sm-12">
+          <p class="post-title float-left"><%= User.find(@post.user_id).username%></p>
+          <p class="post-title float-right" ><%=@post.category%></p>
+        </div>
+      </div>
+      <div class="row post-box">
+      <%if @post.media=='' %>
+      <div class="col-sm-12 post-text" >
+        <p><%=@post.description%></p>
+      </div>
+      <% else %>
+      <div class="col-sm-5 post-image " >
+        <iframe src="<%=@post.media%>"></iframe>
+      </div>
+      <div class="col-sm-6 post-text" >
+        <p><%= @post.description%></p>
+      </div>
+      <% end %>
+      </div>
+      <div class="row post-bottom ">
+        <div class="col-sm-12 post-bottom-cont"> 
+            <p> Comments</p>
+            <div class="container" >
 <%= form_with model:[@post,@comment],local:true,class:"comment_form" do |f| %>
-   <%= f.text_field :body,class:"col-9" %>
-   <%= f.submit "Post",class:"col-2" %>
+    <%= f.text_field :body,class:"col-9" %>
+    <%= f.submit "Post",class:"col-2" %>
 <% end %>
 </div>
 <div class="container" >
 <% @comments.each do |comment|%>
- <div class="row comment-row">
- <div class="username-date">
- <div class="col-12 comment-username">
-     <%= comment.user.username %>
-   </div>
-   <div class="col-12 comment-time ">
-     <%= comment.created_at.strftime("%I:%M %p") %>
-   </div>
-   </div>
-   <div class="col-8 comment-text">
-     <%= comment.body %>
-   </div> 
- </div>
+  <div class="row comment-row">
+  <div class="username-date">
+  <div class="col-12 comment-username">
+      <%= comment.user.username %>
+    </div>
+    <div class="col-12 comment-time ">
+      <%= comment.created_at.strftime("%I:%M %p") %>
+    </div>
+    </div>
+    <div class="col-8 comment-text">
+      <%= comment.body %>
+    </div>  
+  </div>
 <%end%>
 </div>
-       </div>
-     </div>
-   </div>
-   </div>
+        </div>
+      </div>
+    </div>
+    </div>
 </div>
+

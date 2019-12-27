@@ -79,40 +79,46 @@
      color: #eee;
  }
  .field-posts textarea{
+     width: 100%;
+     height: 200px;
+     background-color: #1d1d1d;
+     border-radius: 20px 20px 5px;
+     border: 0px;
+    color: #f2f4f7;
+    padding: 10px;
+    outline: none;
+ }
+ .field-posts input{
     width: 100%;
-    height: 200px;
     background-color: #1d1d1d;
-    border-radius: 20px 20px 5px;
+    border-radius: 20px;
     border: 0px;
    color: #f2f4f7;
-   padding: 10px;
+   padding: 5px 15px;
    outline: none;
-}
-.field-posts input{
-   width: 100%;
-   background-color: #1d1d1d;
-   border-radius: 20px;
-   border: 0px;
-  color: #f2f4f7;
-  padding: 5px 15px;
-  outline: none;
-  outline: none;
-  transition: 0.5s;
-}
-.category select{
-    margin-top: 20px;
-    width: 100%;
-    background-color: #1d1d1d;
-   border-radius: 20px;
-   color: white;
    outline: none;
-   border: none;
+   transition: 0.5s;
+}
+ .category select{
+     margin-top: 20px;
+     width: 100%;
+     background-color: #1d1d1d;
+    border-radius: 20px;
+    color: white;
+    outline: none;
+    border: none;
 }
 .field-posts input[type='submit']:hover{
-   background: #23747F;
+    background: #23747F;
 }
-
-
+ .category select option{
+     width: 100%;
+     height: 20px;
+     background-color: #1d1d1d;
+     border-radius: 20px;
+     margin: 5px;
+        
+    }
  .media input{
      margin-top: 20px;
  }
@@ -128,6 +134,9 @@
     padding: 5px;
     border-radius: 20px;
     text-decoration: none;
+}
+.back-btn:hover{
+    background: #23747F;
 }
 .back-btn:hover{
     background: #23747F;
@@ -474,6 +483,8 @@ li a{
      color: #eee;
      font-size: 25px;
  }
+
+
 //  comments
 .comment_form{
     display: flex;
@@ -499,22 +510,21 @@ li a{
  }
  .comment_form #comment_body{
     width: 90%;
- }
- .comment-row{
+}
+.comment-row{
     color: white;
     margin: 15px 0;
-    padding: 10px 0;
+    padding: 10px 0; 
     border-bottom: dashed 2px #3c3c3c;
- }
- .comment-time{
+}
+.comment-time{
     font-size: 10px;
     font-weight: 200;
- }
- .comment-username{
+}
+.comment-username{
     font-size: 16px;
     font-weight: 800;
- }
- 
+}
  @media (max-height: 800px) {
      .form{
          margin-top: calc(70px);
