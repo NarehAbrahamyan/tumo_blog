@@ -27,13 +27,13 @@
     <% end %>
   </div>
   <div class="field">
-    <%= f.password_field :current_password, autocomplete: "new-password", placeholder: "Confirm New Password" %>
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Confirm New Password"%>
   </div>
   <br/>  
     <p class="text-center h6 text-light">we need your current password to confirm your changes</p>
 
   <div class="field">
-    <%= f.password_field :password, autocomplete: "current-password", placeholder: "old Password"%>
+    <%= f.password_field :current_password, autocomplete: "new-password", placeholder: "Your Old Password" %>
   </div>
  
   <div class="actions text-center">

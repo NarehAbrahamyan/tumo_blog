@@ -531,6 +531,141 @@ li a{
     font-size: 20px;
     margin-top: 40px;
 }
+//tiko anim body
+body{
+    background:#000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    }
+    
+    .wave{
+    position: fixed;
+    z-index: 1;
+    }
+    .wave li{
+    list-style-type: none;
+    padding: 2000px;
+    position: fixed;
+    border-radius: 40%;
+    }
+    .wave li:nth-child(1){
+    background: #9BD6DDee;
+    animation: rotate 7s linear infinite;
+    left: -900px;
+    top: -450px;
+    }
+    .wave li:nth-child(2){
+    background: #0A98AA33;
+    animation: rotate 10s linear infinite;
+    left: -600px;
+    top: -300px;
+    }
+    .wave li:nth-child(3){
+    background: #05819133;
+    animation: rotate 11s linear infinite;
+    left: -300px;
+    top: -150px;
+    }
+    .wave li:nth-child(4){
+    background: #096A7733;
+    animation: rotate 12s linear infinite;
+    left: 0px;
+    top: 0px;
+    }
+    .wave li:nth-child(5){
+    background: #07566033;
+    animation: rotate 14s linear infinite;
+    left: 250px;
+    top: 200px;
+    }
+    @keyframes rotate{
+    0%{
+    transform:rotate(0deg);
+    border-radius: 30%;
+    }
+    50%{
+    transform:rotate(180deg);
+    border-radius: 45%;
+    }
+    100%{
+    transform:rotate(360deg);
+    border-radius: 30%;
+    }
+    }
+    
+    .balloons{
+        position: fixed;
+        width: 100%;
+        bottom: -100px;
+    }
+    .balloons li{
+        position: fixed;
+        list-style-type: none;
+        padding: 10px;
+        border-radius:50%;
+        background: #ddd;
+        border: solid 5px white;
+        animation: 10s up linear infinite;
+    }
+    @keyframes up{
+    0%{
+        bottom: -100px;
+    }
+    100%{
+        bottom: calc(100% + 10px);
+    }
+    }
+    .balloons li:nth-child(1){
+        animation-delay: 1s;
+        animation-duration: 10s;
+        left: 5%;
+    }
+    .balloons li:nth-child(2){
+        animation-delay: 9s;
+        animation-duration: 8s;
+        left: 15%;
+    }
+    .balloons li:nth-child(3){
+        animation-delay: 3s;
+        animation-duration: 6s;
+        left: 25%;
+    }
+    .balloons li:nth-child(4){
+        animation-delay: 7s;
+        animation-duration: 8s;
+        left: 35%;
+    }
+    .balloons li:nth-child(5){
+        animation-delay: 4s;
+        animation-duration: 6s;
+        left: 45%;
+    }
+    .balloons li:nth-child(6){
+        animation-delay: 8s;
+        animation-duration: 10s;
+        left: 55%;
+    }
+    .balloons li:nth-child(7){
+        animation-delay: 10s;
+        animation-duration: 6s;
+        left: 65%;
+    }
+    .balloons li:nth-child(8){
+        animation-delay: 2s;
+        animation-duration: 8s;
+        left: 75%;
+    }
+    .balloons li:nth-child(9){
+        animation-delay: 5s;
+        animation-duration: 4s;
+        left: 85%;
+    }
+    .balloons li:nth-child(10){
+        animation-delay: 6s;
+        animation-duration: 10s;
+        left: 95%;
+    }
+    
  @media (max-height: 800px) {
      .form{
          margin-top: calc(70px);

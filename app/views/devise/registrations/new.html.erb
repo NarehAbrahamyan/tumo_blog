@@ -6,16 +6,16 @@
  
  <div class="field">
     
-    <%= f.text_field :username, autofocus: true,placeholder: "UserName" %>
+    <%= f.text_field :username, autofocus: true,placeholder: "UserName",required: true %>
   </div>
 
   <div class="field">
     
-    <%= f.text_field :name, autofocus: true,placeholder: "Name" %>
+    <%= f.text_field :name, autofocus: true,placeholder: "Name",required: true %>
   </div>
   <div class="field">
    
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email" %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email",required: true %>
   </div>
   <div class="field" >
     <%= f.file_field :avatar %>
@@ -25,12 +25,12 @@
     <% if @minimum_password_length %>
     <em class="text-muted">(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" ,placeholder: "New Password"%>
+    <%= f.password_field :password, autocomplete: "new-password" ,placeholder: "New Password",required: true%>
   </div>
 
   <div class="field">
   
-    <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "New Password Confirmation" %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password",placeholder: "New Password Confirmation",required: true %>
   </div>
 
   <div class="actions log" >

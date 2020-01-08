@@ -4,7 +4,6 @@ class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.order(created_at: :desc)
     @direction=[
     'Animation',
     'Game Development',
@@ -21,6 +20,7 @@ class PostsController < ApplicationController
     'Photography',
     'New Media'
   ]
+  @posts = Post.order(votes: :desc)
   end
   # GET /posts/1
   # GET /posts/1.json
@@ -28,7 +28,25 @@ class PostsController < ApplicationController
     @comment=Comment.new
     @comments=@post.comments.order("created_at DESC")
   end
-
+  def trending
+    @direction=[
+      'Animation',
+      'Game Development',
+      'Filmmaking',
+      'Web Development',
+      'Music',
+      'Writing',
+      'Drawing',
+      'Graphic Design',
+      '3D Modeling',
+      'Programming',
+      'Robotics',
+      'Motion Graphics',
+      'Photography',
+      'New Media'
+    ]
+    @posts = Post.order(votes: :desc)
+  end 
   # GET /posts/new
   def new
     @post = current_user.posts.build
