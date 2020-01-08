@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get 'users/:id' => 'users#show'
 
   resources :posts
-  post 'trending' ,to:"posts#trending"
+  get 'trending' ,to:"posts#trending"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :posts do
     post "comments",to:"comments#create"

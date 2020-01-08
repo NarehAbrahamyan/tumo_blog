@@ -29,6 +29,22 @@ class PostsController < ApplicationController
     @comments=@post.comments.order("created_at DESC")
   end
   def trending
+    @direction=[
+      'Animation',
+      'Game Development',
+      'Filmmaking',
+      'Web Development',
+      'Music',
+      'Writing',
+      'Drawing',
+      'Graphic Design',
+      '3D Modeling',
+      'Programming',
+      'Robotics',
+      'Motion Graphics',
+      'Photography',
+      'New Media'
+    ]
     @posts = Post.order(votes: :desc)
   end 
   # GET /posts/new
