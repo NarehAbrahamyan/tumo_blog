@@ -307,6 +307,6 @@ $icon-list:  '' 'Animation-icon.png' 'Game-icon.png' 'Film-icon.png' 'Web-icon.p
 @each $current-icon in $icon-list {
     $i: index($icon-list, $current-icon);
     .sidbar-content div:nth-child(#{$i}) p::before{   
-            background-image: url($current-icon);
+            background-image: image_url($current-icon);
     }
 }
