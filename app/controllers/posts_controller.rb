@@ -48,7 +48,36 @@ class PostsController < ApplicationController
     ]
     @posts = User.find(current_user.id).posts  
   end
-  
+ 
+  # trending
+  def trend
+    @posts = Post.all
+    @ordered_posts = []
+
+    @posts.each do |post|
+      @ordered_posts[post] = post.get_downvotes.size-post.get_upvotes.size
+  end
+
+    @ordered_posts.sort_by{|a| a[] }
+    
+    @posts=Post.order(votes: :desc)
+    @direction=[
+      'Animation',
+      'Game Development',
+      'Filmmaking',
+      'Web Development',
+      'Music',
+      'Writing',
+      'Drawing',
+      'Graphic Design',
+      '3D Modeling',
+      'Programming',
+      'Robotics',
+      'Motion Graphics',
+      'Photography',
+      'New Media'
+    ]
+  end
   def category0
     @posts=Post.where(category: 'Animation')
   end

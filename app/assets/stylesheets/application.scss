@@ -255,19 +255,19 @@ li a{
  }
  a{
      display: inline-block;
-     color: #fff;
+     color: #fff !important;
      transition: 0.5s;
      margin-top: 10px;   
  }
  a:hover{
-     color: #fffb;
+     color: #fffb !important;
  }
  
  
  .animation li{
      position: fixed;
      display: block;
-     border: solid 12px #fff7;
+     border: solid 12px #fff7 !important;
      border-radius: 30px;
      padding: 80px;
      animation: rotate 2s infinite linear;
@@ -293,8 +293,8 @@ li a{
  // }
  
  .animation li:nth-child(2){
-     top: 40%;
-     left: 1%;
+     top: 40% !important;
+     left: 1% !important ;
      animation-duration: 2.8s;
  }
  
@@ -686,3 +686,23 @@ body{
          height: 150%;
      }
  }
+.vote-icon{
+    transform: translate(400%, -400%);
+ }
+ @media only screen and (max-width: 1200px){
+    .vote-icon{
+        transform: translate(310%, -400%);
+    }
+   }
+   @media only screen and (max-width: 991px){
+
+    .vote-icon{
+      transform: translate(195%, -400%);
+   }
+   nav.secondaryMenu.navbar-expand-lg{
+       height: 100px;
+   }
+   body{
+       margin-top: 200px;
+   }
+} 

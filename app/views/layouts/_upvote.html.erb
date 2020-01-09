@@ -1,0 +1,7 @@
+            <div class="col-md-2 upvote  d-none d-xs-none d-md-block" >
+                <%= link_to '' , up_post_path(post),method: :put,class:"col-12 justify-self-center upvote-icon "%>
+                  <i class="fas fa-arrow-up" style="transform: translate(400%, -400%);" ></i>
+                <p class="font-weight-bold upvote-num"> <%=post.votes%></p>
+                <%= link_to '' , down_post_path(post),method: :put,class:"col-12 justify-self-center downvote-icon "%>
+                  <i class="fas fa-arrow-down" style="transform: translate(400%, -400%);"></i>
+            </div>

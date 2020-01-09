@@ -22,6 +22,9 @@ Rails.application.routes.draw do
   get 'category11' ,to:"posts#category11"
   get 'category12' ,to:"posts#category12"
   get 'category13' ,to:"posts#category13"
+  
+  get 'trend',to:"posts#trend"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   resources :posts do
     post "comments",to:"comments#create"
