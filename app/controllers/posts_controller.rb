@@ -20,7 +20,7 @@ class PostsController < ApplicationController
     'Photography',
     'New Media'
   ]
-  @posts = Post.order(votes: :desc)
+  @posts = Post.order(created_at: :desc)
   end
   # GET /posts/1
   # GET /posts/1.json
@@ -28,7 +28,8 @@ class PostsController < ApplicationController
     @comment=Comment.new
     @comments=@post.comments.order("created_at DESC")
   end
-  def trending
+
+  def yposts
     @direction=[
       'Animation',
       'Game Development',
@@ -45,8 +46,53 @@ class PostsController < ApplicationController
       'Photography',
       'New Media'
     ]
-    @posts = Post.order(votes: :desc)
-  end 
+    @posts = User.find(current_user.id).posts  
+  end
+  
+  def category0
+    @posts=Post.where(category: 'Animation')
+  end
+  def category1
+    @posts=Post.where(category: 'Game Development')
+  end
+  def category2
+    @posts=Post.where(category: 'Filmmaking')
+  end
+  def category3
+    @posts=Post.where(category: 'Web Development')
+  end
+  def category4
+    @posts=Post.where(category: 'Music')
+  end
+  def category5
+    @posts=Post.where(category: 'Writing')
+  end
+  def category6
+    @posts=Post.where(category: 'Drawing')
+  end
+  def category7
+    @posts=Post.where(category: 'Graphic Design')
+  end
+  def category8
+    @posts=Post.where(category: '3D Modeling')
+  end
+  def category9
+    @posts=Post.where(category: 'Programming')
+  end
+  def category10
+    @posts=Post.where(category: 'Robotics')
+  end
+  def category11
+    @posts=Post.where(category: 'Motion Graphics')
+  end
+  def category12
+    @posts=Post.where(category: 'Photography')
+  end
+  def category13
+    @posts=Post.where(category: 'New Media')
+  end
+
+  
   # GET /posts/new
   def new
     @post = current_user.posts.build

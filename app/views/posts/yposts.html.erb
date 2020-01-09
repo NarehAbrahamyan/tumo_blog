@@ -1,7 +1,4 @@
-
 <p id="notice"><%= notice %></p>
- 
-
 
 <div class="container">
   <div class="row new-post">
@@ -10,12 +7,13 @@
   <div class="row ">
     <div class="col-md-8 col-sm-12 post-feed" >
     <% @posts.each do |post| %>
-    <%post.votes=post.get_downvotes.size-post.get_upvotes.size %>
+      <%post.votes=post.get_downvotes.size-post.get_upvotes.size %>
+      
         <div class="row post">
             <div class="col-md-2 upvote  d-none d-xs-none d-md-block" >
                 <%= link_to '' , up_post_path(post),method: :put,class:"col-12 justify-self-center upvote-icon "%>
                   <i class="fas fa-arrow-up" style="transform: translate(400%, -400%);" ></i>
-                <p class="font-weight-bold upvote-num"> <%=post.votes%></p>
+                <p class="font-weight-bold upvote-num"> <%= post.votes%></p>
                 <%= link_to '' , down_post_path(post),method: :put,class:"col-12 justify-self-center downvote-icon "%>
                   <i class="fas fa-arrow-down" style="transform: translate(400%, -400%);"></i>
             </div>
@@ -63,37 +61,37 @@
           <h3 class="col-12 sidebar-title " >SIDEBAR</h3>
           <% for num  in @direction do %>
             <div class="col-12 tumo_path ">
-              <p class="text-center text-capitalize ">
-              <% if num=="Animation" %>
-              <%= link_to num ,category0_path() %>
-              <%elsif num=="Game Development" %>
-              <%= link_to num ,category1_path() %>
-              <%elsif num=="Filmmaking" %>
-              <%= link_to num ,category2_path() %>
-              <%elsif num=="Web Development" %>
-              <%= link_to num ,category3_path() %>
-              <%elsif num=="Music" %>
-              <%= link_to num ,category4_path() %>
-              <%elsif num=="Writing" %>
-              <%= link_to num ,category5_path() %>
-              <%elsif num=="Drawing" %>
-              <%= link_to num ,category6_path() %>
-              <%elsif num=="Graphic Design" %>
-              <%= link_to num ,category7_path() %>
-              <%elsif num=="3D Modeling" %>
-              <%= link_to num ,category8_path() %>
-              <%elsif num=="Programming" %>
-              <%= link_to num ,category9_path() %>
-              <%elsif num=="Robotics" %>
-              <%= link_to num ,category10_path() %>
-              <%elsif num=="Motion Graphics" %>
-              <%= link_to num ,category11_path() %>
-              <%elsif num=="Photography" %>
-              <%= link_to num ,category12_path() %>
-              <%elsif num=="New Media" %>
-              <%= link_to num ,category13_path() %>
-              <%end%>
-              </p>
+            <p class="text-center text-capitalize ">
+            <% if num=="Animation" %>
+            <%= link_to num ,category0_path() %>
+            <%elsif num=="Game Development" %>
+            <%= link_to num ,category1_path() %>
+            <%elsif num=="Filmmaking" %>
+            <%= link_to num ,category2_path() %>
+            <%elsif num=="Web Development" %>
+            <%= link_to num ,category3_path() %>
+            <%elsif num=="Music" %>
+            <%= link_to num ,category4_path() %>
+            <%elsif num=="Writing" %>
+            <%= link_to num ,category5_path() %>
+            <%elsif num=="Drawing" %>
+            <%= link_to num ,category6_path() %>
+            <%elsif num=="Graphic Design" %>
+            <%= link_to num ,category7_path() %>
+            <%elsif num=="3D Modeling" %>
+            <%= link_to num ,category8_path() %>
+            <%elsif num=="Programming" %>
+            <%= link_to num ,category9_path() %>
+            <%elsif num=="Robotics" %>
+            <%= link_to num ,category10_path() %>
+            <%elsif num=="Motion Graphics" %>
+            <%= link_to num ,category11_path() %>
+            <%elsif num=="Photography" %>
+            <%= link_to num ,category12_path() %>
+            <%elsif num=="New Media" %>
+            <%= link_to num ,category13_path() %>
+            <%end%>
+            </p>
             </div>
           <% end %>
         </div>  
