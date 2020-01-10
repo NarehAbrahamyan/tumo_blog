@@ -666,7 +666,14 @@ body{
         animation-duration: 10s;
         left: 95%;
     }
-    
+    .col-sm-5.post-image{
+        padding: 0;
+        overflow: hidden;
+    }
+    .col-sm-5.post-image img{
+        width: 105%;
+        height: 100%;
+    }
  @media (max-height: 800px) {
      .form{
          margin-top: calc(70px);
